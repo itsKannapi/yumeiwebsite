@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffe4;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #fa5181;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.site-name {
+    font-family: 'Amsterdam Three', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffe4;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffe4;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+/* Hero Section with GIF Background */
+.hero {
+    background-image: url('plumblossom.gif'); /* Replace with actual GIF */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Sections */
+.section {
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(255, 81, 129, 0.3);
+    max-width: 800px;
+    background-color: #111;
+}
+
+/* Team Logos */
+.team-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-logos img {
+    height: 80px;
+    transition: transform 0.3s;
+}
+
+.team-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #fa5181;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffe4;
+}
+
+/* Merch Buttons */
+.merch-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.merch-btn {
+    background-color: #fa5181;
+    color: #ffffe4;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.merch-btn:hover {
+    background-color: #000000;
+}
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    height: 150px; /* Adjusted for a smaller size */
+    width: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}

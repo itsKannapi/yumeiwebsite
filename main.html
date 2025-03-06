@@ -4,101 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumei Esports</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000000;
-            color: #ffffe4;
-            text-align: center;
-        }
-        header {
-            background-color: #fa5181;
-            color: #ffffe4;
-            padding: 20px;
-            font-size: 32px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            background-color: #111;
-            padding: 15px;
-        }
-        nav a {
-            color: #ffffe4;
-            text-decoration: none;
-            font-size: 18px;
-            text-transform: uppercase;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #fa5181;
-        }
-        main {
-            padding: 50px;
-        }
-        .hero {
-            background-image: url('plumblossom.gif');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #ffffe4;
-            padding: 100px 20px;
-            font-size: 28px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        .section {
-            margin: 40px auto;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 10px rgba(255, 81, 129, 0.3);
-            max-width: 800px;
-            background-color: #111;
-        }
-        .about h2, .teams h2 {
-            color: #fa5181;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        footer {
-            background-color: #fa5181;
-            color: #ffffe4;
-            padding: 20px;
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-    </style>
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amsterdam+Three&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <img src="Yumei-removebg.png" alt="Yumei Esports Logo" width="200" height="auto">
+    <div class="nav-container">
+        <img src="Yumei-removebg.png" alt="Yumei Esports Logo" class="logo">
+        <span class="site-name">Yumei</span>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="teams.html">Teams</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html">Shop</a>
+        </nav>
+    </div>
 </header>
-<nav>
-    <a href="#about">About</a>
-    <a href="#teams">Teams</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-</nav>
+
 <section class="hero">
-  Yumei
+    <h1>Welcome to Yumei Esports – Where Passion Meets Performance</h1>
 </section>
+
 <main>
+    <!-- About Us -->
     <section id="about" class="section about">
         <h2>About Us</h2>
-        <p>Yumei is a competitive esports organization focused on performance, growth, and community. We support players and content creators in reaching their full potential while building an inclusive and engaging gaming culture.</p>
+        <p>Yumei Esports is a competitive gaming organization focused on performance, growth, and community.</p>
     </section>
+
+    <!-- Teams with Interactive Logos -->
     <section id="teams" class="section teams">
         <h2>Our Teams</h2>
-        <p>We compete in Valorant and Marvel Rivals, striving for excellence in and out of the game.</p>
+        <div class="team-logos">
+            <a href="teams.html#valorant"><img src="valorant.png" alt="Valorant Team"></a>
+            <a href="teams.html#marvel-rivals"><img src="rivals.png" alt="Marvel Rivals Team"></a>
+        </div>
+    </section>
+
+    <!-- Upcoming Matches Box -->
+    <section id="matches" class="section matches">
+        <h2>Upcoming Matches</h2>
+        <p>Check out our upcoming esports matches and support Yumei Esports live!</p>
+        <ul>
+            <li><strong>Valorant:</strong> Yumei vs. Team XYZ - March 10, 2025</li>
+            <li><strong>Marvel Rivals:</strong> Yumei vs. Squad ABC - March 15, 2025</li>
+        </ul>
+    </section>
+
+    <!-- Social Media Box -->
+    <section id="socials" class="section socials">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="https://twitter.com/YumeiEsports" target="_blank">
+                <img src="x.png" alt="X (Twitter)">
+            </a>
+            <a href="https://youtube.com/YumeiEsports" target="_blank">
+                <img src="youtube.png" alt="YouTube">
+            </a>
+            <a href="https://twitch.tv/YumeiEsports" target="_blank">
+                <img src="twitch.png" alt="Twitch">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Merch Shop Box -->
+    <section id="merch" class="section merch">
+        <h2>Official Yumei Merch</h2>
+        <div class="merch-buttons">
+            <a href="shop.html#jerseys" class="merch-btn">Jerseys</a>
+            <a href="shop.html#hoodies" class="merch-btn">Hoodies</a>
+            <a href="shop.html#accessories" class="merch-btn">Accessories</a>
+        </div>
     </section>
 </main>
+
 <footer>
     &copy; 2025 Yumei Esports. All rights reserved.
 </footer>
 </body>
 </html>
+
+
