@@ -3,28 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Teams - Yumei Esports</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yumei Teams</title>
+    <link rel="stylesheet" href="teamstyling.css">
 </head>
 <body>
 <header>
-    <div class="nav-container">
-        <img src="Yumei-removebg.png" alt="Yumei Esports Logo" class="logo">
-        <span class="site-name">Yumei</span>
-        <nav>
-            <a href="main.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="news.html">News</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
+    <a href="main.html" class="logo-container">
+        <img src="Yumei-removebg.png" alt="Yumei Logo" class="logo">
+        <span class="yumei-text" style="color: #ffffe4;">Yumei</span>
+    </a>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="teams.html">Teams</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">Shop</a>
+    </nav>
 </header>
+
+<section class="hero">
+    <h1>Meet Our Teams</h1>
+</section>
+
 <main>
-    <section class="section teams">
-        <h2>Our Teams</h2>
-        <p>Yumei Esports competes in multiple games, including **Valorant** and **Marvel Rivals**. We strive for excellence in every match and competition.</p>
-    </section>
+    <div class="team-container">
+        <!-- Valorant Team Box -->
+        <section class="team-box wider">
+            <img src="valorant.png" alt="Valorant Logo" class="game-logo">
+            <h2>Valorant Team</h2>
+            <div class="roster valorant-grid">
+                <div class="row">
+                    <div class="player"><img src="yumeivalorant.png" alt="Player 1"><p>kaNnapi</p><p class="role">IGL</p></div>
+                    <div class="player"><img src="yumeivalorant.png" alt="Player 2"><p>tigilldir</p><p class="role">Flex</p></div>
+                    <div class="player"><img src="yumeivalorant.png" alt="Player 3"><p>sunni</p><p class="role">Controller</p></div>
+                </div>
+                <div class="row">
+                    <div class="player"><img src="yumeivalorant.png" alt="Player 4"><p>matt</p><p class="role">Sentinel</p></div>
+                    <div class="player"><img src="yumeivalorant.png" alt="Player 5"><p>mikey</p><p class="role">Duelist</p></div>
+                </div>
+                <div class="row center">
+                    <div class="player"><img src="yumeivalorant.png" alt="Sub 1"><p>lama</p><p class="role">Sub</p></div>
+                    <div class="player"><img src="yumeivalorant.png" alt="Sub 1"><p>jake</p><p class="role">Sub</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marvel Rivals Team Box -->
+        <section class="team-box wider">
+            <img src="rivals.png" alt="Marvel Rivals Logo" class="game-logo">
+            <h2>Marvel Rivals Team</h2>
+            <div class="roster marvel-grid">
+                <div class="row">
+                    <div class="player"><img src="yumeirivals.png" alt="Player 1"><p>Pika</p><p class="role">DPS</p></div>
+                    <div class="player"><img src="yumeirivals.png" alt="Player 2"><p>dnfl</p><p class="role">DPS/Flex</p></div>
+                    <div class="player"><img src="yumeirivals.png" alt="Player 3"><p>Bencal</p><p class="role">Support</p></div>
+                </div>
+                <div class="row">
+                    <div class="player"><img src="yumeirivals.png" alt="Player 4"><p>Crux</p><p class="role">Vanguard/Flex</p></div>
+                    <div class="player"><img src="yumeirivals.png" alt="Player 5"><p>grey</p><p class="role">Support</p></div>
+                    <div class="player"><img src="yumeirivals.png" alt="Player 6"><p>Carnic</p><p class="role">Vanguard</p></div>
+                </div>
+                <div class="row">
+                    <div class="player"><img src="yumeirivals.png" alt="Sub 1"><p>mankey101</p><p class="role">Support</p></div>
+                    <div class="player"><img src="yumeirivals.png" alt="Sub 2"><p>ThousandsofBees</p><p class="role">Vanguard</p></div>
+                    <div class="player"><img src="yumeirivals.png" alt="Sub 3"><p>DemonboixD</p><p class="role">DPS/Vanguard</p></div>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+
 <footer>
     &copy; 2025 Yumei Esports. All rights reserved.
 </footer>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumei Esports</title>
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="mainstyling.css">
     <link href="https://fonts.googleapis.com/css2?family=Amsterdam+Three&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,14 +23,14 @@
 </header>
 
 <section class="hero">
-    <h1>Welcome to Yumei Esports – Where Passion Meets Performance</h1>
+    <h1>Yumei - Where our players blossom</h1>
 </section>
 
 <main>
     <!-- About Us -->
     <section id="about" class="section about">
         <h2>About Us</h2>
-        <p>Yumei Esports is a competitive gaming organization focused on performance, growth, and community.</p>
+        <p>Yumei Esports is an organization dedicated to branching our players to their highest potential.</p>
     </section>
 
     <!-- Teams with Interactive Logos -->
@@ -43,41 +43,66 @@
     </section>
 
     <!-- Upcoming Matches Box -->
-    <section id="matches" class="section matches">
+    <section id="upcoming-matches" class="section upcoming-matches">
         <h2>Upcoming Matches</h2>
-        <p>Check out our upcoming esports matches and support Yumei Esports live!</p>
-        <ul>
-            <li><strong>Valorant:</strong> Yumei vs. Team XYZ - March 10, 2025</li>
-            <li><strong>Marvel Rivals:</strong> Yumei vs. Squad ABC - March 15, 2025</li>
-        </ul>
+        <div class="matches-container">
+            <!-- Valorant Match -->
+            <div class="match-box">
+                <img src="valorant.png" alt="Valorant" class="game-logo">
+                <p class="match-title">Yumei (Valorant) vs. TBD</p>
+                <p class="league-name">Valorant Tournament</p>
+                <p class="match-time">March 10, 2025 - 6:00 PM CST</p>
+                <a href="https://twitch.tv/YumeiEsports" target="_blank" class="watch-live">Watch Live</a>
+            </div>
+
+            <!-- Marvel Rivals Match -->
+            <div class="match-box">
+                <img src="rivals.png" alt="Marvel Rivals" class="game-logo">
+                <p class="match-title">Yumei (Marvel Rivals) vs. TBD</p>
+                <p class="league-name">Marvel Rivals Tournament</p>
+                <p class="match-time">March 12, 2025 - 7:30 PM CST</p>
+                <a href="https://twitch.tv/YumeiEsports" target="_blank" class="watch-live">Watch Live</a>
+            </div>
+        </div>
     </section>
+
 
     <!-- Social Media Box -->
     <section id="socials" class="section socials">
         <h2>Follow Us</h2>
-        <div class="social-icons">
-            <a href="https://twitter.com/YumeiEsports" target="_blank">
-                <img src="x.png" alt="X (Twitter)">
-            </a>
-            <a href="https://youtube.com/YumeiEsports" target="_blank">
-                <img src="youtube.png" alt="YouTube">
-            </a>
-            <a href="https://twitch.tv/YumeiEsports" target="_blank">
-                <img src="twitch.png" alt="Twitch">
-            </a>
+        <div class="socials-container">
+            <div class="social-box">
+                <a href="https://twitter.com/YumeiEsports" target="_blank">
+                    <img src="x.png" alt="X (Twitter)">
+                </a>
+                <a href="https://youtube.com/YumeiEsports" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+                <a href="https://twitch.tv/YumeiEsports" target="_blank">
+                    <img src="twitch.png" alt="Twitch">
+                </a>
+            </div>
         </div>
     </section>
+
 
 
     <!-- Merch Shop Box -->
-    <section id="merch" class="section merch">
-        <h2>Official Yumei Merch</h2>
-        <div class="merch-buttons">
-            <a href="shop.html#jerseys" class="merch-btn">Jerseys</a>
-            <a href="shop.html#hoodies" class="merch-btn">Hoodies</a>
-            <a href="shop.html#accessories" class="merch-btn">Accessories</a>
+    <section id="merch-shop" class="section merch-shop">
+        <h2>Yumei Merch</h2>
+        <div class="merch-container">
+            <a href="shop/hoodies.html" class="merch-item">
+                <img src="merch/hoodie.jpg" alt="Yumei Hoodie">
+            </a>
+            <a href="shop/jerseys.html" class="merch-item">
+                <img src="merch/jersey.jpg" alt="Yumei Jersey">
+            </a>
+            <a href="shop/accessories.html" class="merch-item">
+                <img src="merch/accessories.jpg" alt="Yumei Accessories">
+            </a>
         </div>
     </section>
+
 </main>
 
 <footer>

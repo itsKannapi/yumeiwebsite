@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffe4;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #fa5181;
+    color: #ffffe4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.yumei-text {
+    font-family: 'Amsterdam Three', cursive;
+    font-size: 24px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffe4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+/* Hero Section */
+.hero {
+    background: url('plumblossom.gif') center/cover no-repeat;
+    color: #ffffe4;
+    padding: 80px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* News Section */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+}
+
+/* Featured News Box */
+.news-box.big {
+    background-color: #111;
+    color: #ffffe4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 81, 129, 0.3);
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+/* Expandable News Items */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+.news-item {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+    color: #ffffe4;
+    box-shadow: 0 2px 5px rgba(255, 81, 129, 0.3);
+}
+
+.news-item:hover {
+    background-color: #fa5181;
+    color: #000;
+}
+
+.news-content {
+    display: none;
+    padding-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #fa5181;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #ffffe4;
+}

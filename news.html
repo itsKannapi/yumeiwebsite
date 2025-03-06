@@ -3,28 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News - Yumei Esports</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yumei News</title>
+    <link rel="stylesheet" href="newsstyling.css">
+    <script>
+        function toggleNewsContent(id) {
+            let content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </head>
 <body>
 <header>
-    <div class="nav-container">
-        <img src="Yumei-removebg.png" alt="Yumei Esports Logo" class="logo">
-        <span class="site-name">Yumei</span>
-        <nav>
-            <a href="main.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="teams.html">Teams</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
+    <a href="main.html" class="logo-container">
+        <img src="Yumei-removebg.png" alt="Yumei Logo" class="logo">
+        <span class="yumei-text" style="color: #ffffe4;">Yumei</span>
+    </a>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="teams.html">Teams</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">Shop</a>
+    </nav>
 </header>
+
+<section class="hero">
+    <h1>Latest News</h1>
+</section>
+
 <main>
-    <section class="section news">
-        <h2>Latest News</h2>
-        <p>Stay updated with Yumei Esports! Check out our latest tournament results, player signings, and community events.</p>
-    </section>
+    <div class="news-container">
+        <!-- Featured News Box -->
+        <section class="news-box big">
+            <h2>Featured News</h2>
+            <p>Follow Yumei in their tournaments!</p>
+        </section>
+
+        <!-- Expandable News Items -->
+        <section class="news-list">
+            <div class="news-item" onclick="toggleNewsContent('news1')">
+                <h3>Yumei acquire Jollibaes, reacquiring their former core</h3>
+                <p>The former core of Yumei Esports early 2024 team of Kannapi, Sunni and lama have been acquired by
+                    Yumei Esports along with the Jollibaes core of tigilldir, Matt, Mikey, and Jake.</p>
+                <div class="news-content" id="news1"> Meanwhile, Jake and Lama have been slotted as the substitute role.
+                    Jollibaes has been successful in their premier season before having to leave towards the end of the
+                    season and miss playoffs due to a controversial ban placed on tigillidir. Jollibaes ended last
+                    premier season with a winning record with their leading map to be split.</div>
+            </div>
+            <div class="news-item" onclick="toggleNewsContent('news2')">
+                <h3>Yumei enters Marvel Rivals</h3>
+                <p>Today, Yumei announced the signings of pikaa, dnfl, bencal, CRUX, grey, and Carnic to the starting
+                    roster.</p>
+                <div class="news-content" id="news2">While, mankey101, ThousandsOfBees, DemonboixD have been announced at subs for the team.
+                    With the signings, Yumei is looking forward to being a highly regarded competitor in the landscape
+                    of Marvel Rivals, assembling a roster with the ambition of replicating the success of our
+                    Valorant teams. we see immense potential in the title’s future as an esport. While the scene is
+                    still in its early stages, we have confidence that NetEase will foster a strong competitive
+                    infrastructure. By committing early, Sentinels aims to establish one of the top teams in the world,
+                    positioning ourselves at the forefront of Marvel Rivals esports from the very beginning.
+
+                    Fans interested in following the team can head over to our dedicated social medias on their
+                    successes!</div>
+            </div>
+        </section>
+    </div>
 </main>
+
 <footer>
     &copy; 2025 Yumei Esports. All rights reserved.
 </footer>
